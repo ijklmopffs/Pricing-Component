@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Pricing Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card_layout">
+      <h2>Our Pricing</h2>
+      <div class="span">
+        <span>Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+
+        <span>Monthly</span>
+      </div>
+      <div class="container">
+        <div class="first_card">
+          <h3>Basic</h3>
+          <p class="amount" id="one">&dollar;19.99</p>
+          <p class="amount annually" id="two">&dollar;199.99</p>
+          <div class="vl"></div>
+          <p>500 GB Storage</p>
+          <div class="vl"></div>
+          <p>2 Users Allowed</p>
+          <div class="vl"></div>
+          <p>Send up to 3 GB</p>
+          <div class="vl"></div>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="second_card">
+          <h3>Professional</h3>
+          <p class="amount">&dollar;24.99</p>
+          <p class="annually amount">&dollar;249.99</p>
+          <div class="vl"></div>
+          <p>1 TB Storage</p>
+          <div class="vl"></div>
+          <p>5 Users Allowed</p>
+          <div class="vl"></div>
+          <p>Send up to 10 GB</p>
+          <div class="vl"></div>
+          <button>LEARN MORE</button>
+        </div>
+        <div class="first_card">
+          <h3>Master</h3>
+          <p class="amount">&dollar;39.99</p>
+          <p class="annually amount">&dollar;399.99</p>
+          <div class="vl"></div>
+          <p>2 TB Storage</p>
+          <div class="vl"></div>
+          <p>10 Users Allowed</p>
+          <div class="vl"></div>
+          <p>Send up to 20 GB</p>
+          <div class="vl"></div>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ijklmopffs" target="_blank">Nuel Elekwachi</a
+      >.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
