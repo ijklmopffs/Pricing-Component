@@ -1,13 +1,14 @@
 const toggle = document.getElementById("toggle");
-const one = document.getElementById("one");
-const two = document.getElementById("two");
-const content = document.getElementsByClassName("amount");
-const content1 = document.getElementsByClassName("annually");
+const amounts = document.getElementsByClassName("amount");
 
 toggle.addEventListener("change", function () {
   if (this.checked) {
-    two.classList.add = "annually";
-    one.classList.remove = "annually";
-    console.log("worked");
+    for (let i = 0; i < amounts.length; i++) {
+      amounts[i].textContent = "$199.99";
+    }
+  } else {
+    for (let i = 0; i < amounts.length; i++) {
+      amounts[i].textContent = "$24.99";
+    }
   }
 });
