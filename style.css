@@ -2,18 +2,17 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   background-color: hsl(240, 78%, 98%);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
 }
-
 .card_layout {
-  margin: 0 auto;
-  max-width: 800px;
-  margin-top: 100px;
+  margin-block-end: 40px;
 }
 .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0;
 }
 .card_layout h2 {
   text-align: center;
@@ -25,14 +24,17 @@ body {
 .first_card {
   border: 2px;
   background-color: white;
-  margin-right: 20px;
   border-radius: 10px;
-  max-width: 300px;
   text-align: center;
   height: 50vh;
   font-size: 12px;
-  margin-top: 70px;
-  flex: 1 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 256px;
+  color: hsl(233, 13%, 49%);
+}
+.first_card .amount {
+  color: hsl(232, 13%, 33%);
 }
 .first_card button {
   margin-top: 20px;
@@ -41,7 +43,8 @@ body {
   border-radius: 5px;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 0.9em;
 }
 .amount {
   font-size: 50px;
@@ -59,15 +62,15 @@ body {
 .second_card {
   border: 2px;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-  margin-right: 20px;
   border-radius: 10px;
-  max-width: 300px;
   text-align: center;
   height: 60vh;
   font-size: 12px;
   margin-top: 30px;
-  flex: 1 0 auto;
   margin-bottom: 20px;
+  padding: 20px;
+  width: 256px;
+  color: hsl(240, 78%, 98%);
 }
 .second_card button {
   margin-top: 20px;
@@ -76,7 +79,8 @@ body {
   border-radius: 5px;
   background-color: hsl(240, 78%, 98%);
   color: hsl(237, 63%, 64%);
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 0.9em;
 }
 
 .switch {
@@ -120,11 +124,12 @@ input:checked + .slider:before {
     align-items: center;
   }
   .first_card {
-    height: 60vh;
+    height: 35vh;
     width: 100%;
     margin-top: 35px;
   }
   .second_card {
+    height: 35vh;
     width: 100%;
     margin-bottom: 0;
   }
